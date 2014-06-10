@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=1024" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>hi,ziQing</title>
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:regular,semibold,italic,italicsemibold|PT+Sans:400,700,400italic,700italic|PT+Serif:400,700,400italic,700italic" rel="stylesheet" />
+    <link href="css/impress-demo.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="favicon.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+</head>
+
+<body class="impress-not-supported">
+<div id="impress">
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
+        <q>致紫青</q>
+    </div>
+    <div class="step slide" data-x="0" data-y="-1500">
+        <q>我们相识，在2003年的一个夏天。我穿着我的旧汗衫，你梳着你的马尾辫。</q>
+    </div>
+    <div class="step slide" data-x="1000" data-y="-1500">
+        <q>那时你和我都坐在第一排，仰着脸，看粉笔在玻璃黑板上吱吱划过，看一只小虫飞落在老师的左肩。</q>
+    </div>
+    <div class="step slide" data-x="1500" data-y="-1500">
+        <q><p/>时光<strong>荏苒</strong>，能走到<strong>今天</strong>，只因为当时在课堂上，偷瞄了你一眼。</q>
+    </div>
+    <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
+        <span class="try">一眼</span>
+        <h1>万年</h1>
+        <span class="footnote"></span>
+    </div>
+    <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
+        <p>时光如车轮，滚滚向前<br/>
+        滴滴作响的QQ<br/>
+        开始传递思念</p>
+    </div>
+
+    <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
+        <p>大盘鸡，小饭店</p>
+    </div>
+    <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
+        <p>操场，白云和蓝天</p>
+    </div>
+
+    <!--
+        
+        This step here doesn't introduce anything new when it comes to data attributes, but you
+        should notice in the demo that some words of this text are being animated.
+        It's a very basic CSS transition that is applied to the elements when this step element is
+        reached.
+        
+        At the very beginning of the presentation all step elements are given the class of `future`.
+        It means that they haven't been visited yet.
+        
+        When the presentation moves to given step `future` is changed to `present` class name.
+        That's how animation on this step works - text moves when the step has `present` class.
+        
+        Finally when the step is left the `present` class is removed from the element and `past`
+        class is added.
+        
+        So basically every step element has one of three classes: `future`, `present` and `past`.
+        Only one current step has the `present` class.
+        
+    -->
+    <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
+        <p>舒展身子<b class="positioning">在夏天的夜晚</b>, <b class="rotating">幸福</b>就<b class="scaling">那么</b>简单</p>
+    </div>
+
+    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
+        <p>卿做蒲苇我做石，顽石虽愚堪补天 <b class="imagination">海誓山盟，日思夜念</b></p>
+    </div>
+
+    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
+        <p>银戒指</p>
+        <q>红手链</q>
+    </div>
+
+    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
+        <p>有情千里能相见</p>
+    </div>
+
+    <!--
+        
+        And the last one shows full power and flexibility of impress.js.
+        
+        You can not only position element in 3D, but also rotate it around any axis.
+        So this one here will get rotated by -40 degrees (40 degrees anticlockwise) around X axis and
+        10 degrees (clockwise) around Y axis.
+        
+        You can of course rotate it around Z axis with `data-rotate-z` - it has exactly the same effect
+        as `data-rotate` (these two are basically aliases).
+        
+    -->
+    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p><span class="have">闹铃</span> <span class="you">声停，</span> <span class="noticed">毕业</span> <span class="its">转眼</span> <b/><span class="in">人散，</span> <b>心不散</b></p>
+        <span class="footnote">你在我心间</span>
+    </div>
+
+    <!--
+        
+        So to make a summary of all the possible attributes used to position presentation steps, we have:
+        
+        * `data-x`, `data-y`, `data-z` - they define the position of **the center** of step element on
+            the canvas in pixels; their default value is 0;
+        * `data-rotate-x`, `data-rotate-y`, 'data-rotate-z`, `data-rotate` - they define the rotation of
+            the element around given axis in degrees; their default value is 0; `data-rotate` and `data-rotate-z`
+            are exactly the same;
+        * `data-scale` - defines the scale of step element; default value is 1
+        
+        These values are used by impress.js in CSS transformation functions, so for more information consult
+        CSS transfrom docs: https://developer.mozilla.org/en/CSS/transform
+        
+    -->
+    <div id="overview" class="step" data-x="3000" data-y="1500" data-scale="10">
+    </div>
+
+</div>
+<div class="hint">
+    <p>使用空格键或者左右方向键来浏览</p>
+</div>
+<script>
+if ("ontouchstart" in document.documentElement) { 
+    document.querySelector(".hint").innerHTML = "<p>点击左边或者右边来浏览</p>";
+}
+</script>
+<script src="js/impress.js"></script>
+<script>impress().init();</script>
+</body>
+</html>
